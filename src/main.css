@@ -1,1 +1,27 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #2a2a2a; /* substituo pelos seus hex */
+  --color-secondary: #e8e7e8;
+  --color-accent: #0a9aa8;
+  --color-background: #ffffff;
+  --color-foreground: #2a2a2a; /* cor de texto padrão */
+  --color-muted: #6b7280; /* texto secundário, menos importante */
+
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  color: var(--color-foreground);
+}

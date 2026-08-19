@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import type { NavItem } from "../types/NavItem";
+import CtaButton from "./CtaButton";
 
 const navItems: NavItem[] = [
   { label: "Home", path: "/" },
@@ -29,12 +30,7 @@ function Header() {
           </NavLink>
         ))}
       </nav>
-      <NavLink
-        to="/contato"
-        className="bg-gray-900 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition-colors"
-      >
-        Fale conosco
-      </NavLink>
+      <CtaButton to="/contato">Fale conosco</CtaButton>
     </header>
   );
 }
