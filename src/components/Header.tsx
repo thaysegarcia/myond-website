@@ -4,7 +4,7 @@ import type { NavItem } from "../types/NavItem";
 const navItems: NavItem[] = [
   { label: "Home", path: "/" },
   { label: "Portfólio", path: "/portfolio" },
-  { label: "Equipe", path: "/equipe" },
+  { label: "Sobre", path: "/sobre" },
 ];
 
 function Header() {
