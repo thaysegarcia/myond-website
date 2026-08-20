@@ -3,9 +3,10 @@ import type { NavItem } from "../types/NavItem";
 import CtaButton from "./CtaButton";
 
 const navItems: NavItem[] = [
-  { label: "Home", path: "/" },
-  { label: "Portfólio", path: "/portfolio" },
-  { label: "Sobre", path: "/sobre" },
+  { label: "Home", hash: "hero" },
+  { label: "Portfólio", hash: "portfolio" },
+  { label: "Sobre", hash: "sobre" },
+  { label: "Contato", hash: "contato" },
 ];
 
 function Header() {
@@ -18,8 +19,8 @@ function Header() {
       <nav className="flex items-center gap-6">
         {navItems.map((item) => (
           <NavLink
-            key={item.path}
-            to={item.path}
+            key={item.hash}
+            to={`/#${item.hash}`}
             className={({ isActive }) =>
               isActive
                 ? "text-gray-900 font-medium"
@@ -30,7 +31,6 @@ function Header() {
           </NavLink>
         ))}
       </nav>
-      <CtaButton to="/contato">Fale conosco</CtaButton>
     </header>
   );
 }
