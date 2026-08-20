@@ -24,7 +24,7 @@ function CardStack({ cards, interval = 3000 }: CardStackProps) {
   }, [interval]);
 
   return (
-    <div className="relative w-full max-w-md aspect-[4/5]">
+    <div className="relative w-full max-w-md aspect-square">
       {order.map((cardIndex, depth) => {
         if (depth >= COUNT) return null;
         const card = cards[cardIndex];
@@ -34,8 +34,8 @@ function CardStack({ cards, interval = 3000 }: CardStackProps) {
             key={card.id}
             className="absolute inset-0 rounded-xl overflow-hidden shadow-xl bg-white"
             animate={{
-              x: `${depth * 12}%`,
-              y: `${depth * 8}%`,
+              x: `${depth * 10}%`,
+              y: `${depth * 1}%`,
               scale: 1 - depth * 0.06,
               opacity: depth === 0 ? 1 : 0.9 - depth * 0.15,
             }}
