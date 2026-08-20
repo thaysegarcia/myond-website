@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import type { NavItem } from "../types/NavItem";
-import CtaButton from "./CtaButton";
 
 const navItems: NavItem[] = [
   { label: "Home", hash: "hero" },
@@ -21,11 +20,7 @@ function Header() {
           <NavLink
             key={item.hash}
             to={`/#${item.hash}`}
-            className={({ isActive }) =>
-              isActive
-                ? "text-gray-900 font-medium"
-                : "text-gray-500 hover:text-gray-900 transition-colors"
-            }
+            className="text-muted hover:text-foreground hover:scale-95 transition-all duration-300"
           >
             {item.label}
           </NavLink>

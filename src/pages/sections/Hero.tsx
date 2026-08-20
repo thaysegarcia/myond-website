@@ -1,5 +1,9 @@
+import CardStack from "../../components/CardStack";
 import CtaButton from "../../components/CtaButton";
 import MotionSection from "../../components/MotionSection";
+import { identityCards } from "../../data/VisualIDCards";
+
+
 
 function Hero() {
   return (
@@ -20,11 +24,7 @@ function Hero() {
         </MotionSection>
 
         <MotionSection direction="right">
-          <img
-            src={""}
-            alt="Mockup de identidade visual desenvolvida pela Myond"
-            className="w-full rounded-lg shadow-lg"
-          />
+          <CardStack cards={identityCards} />
         </MotionSection>
       </div>
     </section>

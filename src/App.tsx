@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToSectionHandler from "./components/ScrollToSectionHandler";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import ScrollToSectionHandler from "./components/ScrollToSectionHandler";
 
 function App() {
   return (
