@@ -3,7 +3,8 @@ import type { ReactNode } from "react";
 
 interface MotionSectionProps {
   children: ReactNode;
-  direction: "up" | "left" | "right";
+  direction?: "up" | "left" | "right";
+  delay?: number;
 }
 
 const directionOffset = {
@@ -12,7 +13,11 @@ const directionOffset = {
   right: { y: 0, x: 40 },
 };
 
-function MotionSection({ children, direction = "up" }: MotionSectionProps) {
+function MotionSection({
+  children,
+  direction = "left",
+  delay = 0,
+}: MotionSectionProps) {
   const offset = directionOffset[direction];
 
   return (
@@ -20,7 +25,7 @@ function MotionSection({ children, direction = "up" }: MotionSectionProps) {
       initial={{ opacity: 0, ...offset }}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 0.6, ease: "easeIn" }}
+      transition={{ duration: 0.6, ease: "easeIn", delay }}
     >
       {children}
     </motion.div>

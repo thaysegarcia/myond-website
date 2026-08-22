@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import type { NavItem } from "../types/NavItem";
 
 const navItems: NavItem[] = [
-  { label: "Home", hash: "hero" },
+  { label: "Home", hash: "" },
   { label: "Portfólio", hash: "portfolio" },
   { label: "Sobre", hash: "sobre" },
   { label: "Contato", hash: "contato" },
