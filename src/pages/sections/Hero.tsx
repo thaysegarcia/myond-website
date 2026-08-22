@@ -10,12 +10,12 @@ function Hero() {
       <div className="grid md:grid-cols-2 gap-12 items-start">
         <div>
           <MotionSection>
-            <h1 className="text-4xl md:text-5xl font-black leading-tight text-foreground">
+            <h1 className="text-5xl md:text-7xl font-black leading-tight text-foreground">
               Identidades visuais <em>únicas</em> e relevantes
             </h1>
           </MotionSection>
           <MotionSection delay={0.1}>
-            <p className="mt-6 text-lg text-muted">
+            <p className="mt-6 text-lg">
               Criamos marcas com personalidade, que contam a própria história.
               Pensadas pra quem quer se destacar de verdade.
             </p>

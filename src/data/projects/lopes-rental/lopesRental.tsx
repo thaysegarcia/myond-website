@@ -5,7 +5,7 @@ import imagem01 from "./images/Agenda-scaled.webp";
 import imagem02 from "./images/2-canecas-de-cafe-scaled.webp";
 
 export const lopesRental: ProjectDetails = {
-  id: 1,
+  id: "01",
   slug: "lopes-rental",
   title: "Lopes Rental",
   tags: ["Visual ID", "Website"],

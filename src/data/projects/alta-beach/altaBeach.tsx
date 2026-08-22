@@ -5,7 +5,7 @@ import imagem01 from "./images/Bolsa-de-tecido-scaled (1).webp";
 import imagem02 from "./images/cartao-de-visita-2-scaled.webp";
 
 export const altaBeach: ProjectDetails = {
-  id: 2,
+  id: "02",
   slug: "alta-beach",
   title: "Alta Beach",
   tags: ["Visual ID"],

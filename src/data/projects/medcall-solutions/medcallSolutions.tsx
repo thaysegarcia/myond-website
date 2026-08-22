@@ -5,7 +5,7 @@ import image01 from "./images/outdoor-scaled.webp";
 import image02 from "./images/smartphone-scaled.webp";
 
 export const medcallSolutions: ProjectDetails = {
-  id: 3,
+  id: "03",
   slug: "medcall-solutions",
   title: "Medcall Solutions",
   tags: ["Visual ID", "Website"],

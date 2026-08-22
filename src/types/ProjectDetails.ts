@@ -1,5 +1,5 @@
 export interface ProjectDetails {
-  id: number;
+  id: string;
   slug: string;
   title: string;
   tags: string[];

@@ -5,7 +5,7 @@ import image01 from "./images/Cracha-scaled.webp";
 import image02 from "./images/celular-scaled.webp";
 
 export const karmaChain: ProjectDetails = {
-  id: 4,
+  id: "04",
   slug: "karma-chain",
   title: "Karma Chain",
   tags: ["Visual ID"],

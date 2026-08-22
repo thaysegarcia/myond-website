@@ -18,7 +18,7 @@ html {
 
 body {
   font-family: var(--font-body);
-  color: var(--color-foreground);
+  color: var(--color-muted);
   background-color: var(--color-background);
 }
 

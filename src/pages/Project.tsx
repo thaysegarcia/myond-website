@@ -16,7 +16,7 @@ function Project() {
         <h2 className="text-5xl md:text-8xl font-black italic text-center">
           Projeto não encontrado
         </h2>
-        <Link to="/#portfolio" className="text-primary underline">
+        <Link to="/#portfolio" className="text-foreground border-b border-b-muted hover:text-muted">
           Voltar ao portfólio
         </Link>
       </Container>
@@ -33,7 +33,7 @@ function Project() {
             <h2 className="text-2xl md:text-3xl font-black leading-tight text-foreground">
               {project.title}
             </h2>
-            <p className="text-xs text-muted mt-2 mb-8 uppercase">
+            <p className="text-xs mt-2 mb-8 uppercase">
               {project.tags.join(", ")}
             </p>
 
@@ -48,10 +48,9 @@ function Project() {
               {previousProject ? (
                 <Link
                   to={`/portfolio/${previousProject.slug}`}
-                  className="relative overflow-hidden pb-1 group text-muted hover:text-foreground transition-colors duration-300 cursor-pointer"
+                  className="text-foreground hover:text-muted transition-colors duration-300 cursor-pointer"
                 >
                   <span> ← {previousProject.title}</span>
-                  <span className="absolute bottom-0 left-0 h-[1.5px] w-full bg-primary transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
                 </Link>
               ) : (
                 <div />
@@ -59,10 +58,9 @@ function Project() {
               {nextProject ? (
                 <Link
                   to={`/portfolio/${nextProject.slug}`}
-                  className="relative overflow-hidden pb-1 group text-muted hover:text-foreground transition-colors duration-300 cursor-pointer "
+                  className="text-foreground hover:text-muted transition-colors duration-300 cursor-pointer "
                 >
                   <span>{nextProject.title} →</span>
-                  <span className="absolute bottom-0 left-0 h-[1.5px] w-full bg-primary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
                 </Link>
               ) : (
                 <div />
