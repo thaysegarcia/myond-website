@@ -10,8 +10,8 @@ const navItems: NavItem[] = [
 
 function Header() {
   return (
-    <header className="flex items-center justify-between px-6 py-4">
-      <span className="text-xl font-black">
+    <header className="flex items-center justify-between px-10 py-6">
+      <span className="text-lg font-black">
         <NavLink to="/">Myond</NavLink>
       </span>
 
@@ -20,7 +20,7 @@ function Header() {
           <NavLink
             key={item.hash}
             to={`/#${item.hash}`}
-            className="text-muted hover:text-foreground hover:scale-95 transition-all duration-300"
+            className="text-muted decor hover:text-foreground hover:scale-95 transition-all duration-300"
           >
             {item.label}
           </NavLink>

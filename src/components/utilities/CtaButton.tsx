@@ -12,7 +12,7 @@ function CtaButton({ to, children, className = "" }: CtaButtonProps) {
     <NavLink
       to={to}
       className={`inline-block bg-primary text-white px-6 py-3 rounded-md shadow-xl
-            hover:bg-accent hover:scale-95 hover:shadow-s transition-all duration-300 ${className}`}
+            hover:bg-accent hover:scale-95 hover:shadow-sm transition-all duration-300 ${className}`}
     >
       {children}
     </NavLink>
