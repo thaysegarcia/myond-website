@@ -1,8 +1,8 @@
 export interface ProjectDetails {
-  id: string;
+  id: number;
   slug: string;
   title: string;
   tags: string[];
-  description: string;
+  description: string[];
   gallery: string[];
 }
