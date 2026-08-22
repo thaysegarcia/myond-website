@@ -20,7 +20,7 @@ function Header() {
           <NavLink
             key={item.hash}
             to={`/#${item.hash}`}
-            className="text-muted decor hover:text-foreground hover:scale-95 transition-all duration-300"
+            className="text-foreground decor hover:text-muted transition-colors duration-300"
           >
             {item.label}
           </NavLink>

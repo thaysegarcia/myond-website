@@ -24,7 +24,7 @@ function Project() {
   }
 
   return (
-    <Container>
+    <Container key={slug}>
       <div className="grid md:grid-cols-2 gap-12 items-start">
         <MotionSection>galeria</MotionSection>
 
@@ -36,22 +36,22 @@ function Project() {
             <p className="text-xs text-muted mt-2 mb-8 uppercase">
               {project.tags.join(", ")}
             </p>
-          </MotionSection>
-          {project.description.map((p, i) => (
-            <MotionSection direction="right" delay={(i + 1) * 0.1}>
+
+            {project.description.map((p, i) => (
               <p className="mb-4" key={i}>
                 {p}
               </p>
-            </MotionSection>
-          ))}
-          <MotionSection direction="right">
+            ))}
+          </MotionSection>
+          <MotionSection direction="up">
             <div className="flex items-center justify-between mt-16">
               {previousProject ? (
                 <Link
                   to={`/portfolio/${previousProject.slug}`}
-                  className="cursor-pointer"
+                  className="relative overflow-hidden pb-1 group text-muted hover:text-foreground transition-colors duration-300 cursor-pointer"
                 >
-                  previous
+                  <span> ← {previousProject.title}</span>
+                  <span className="absolute bottom-0 left-0 h-[1.5px] w-full bg-primary transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
                 </Link>
               ) : (
                 <div />
@@ -59,9 +59,10 @@ function Project() {
               {nextProject ? (
                 <Link
                   to={`/portfolio/${nextProject.slug}`}
-                  className="cursor-pointer"
+                  className="relative overflow-hidden pb-1 group text-muted hover:text-foreground transition-colors duration-300 cursor-pointer "
                 >
-                  next
+                  <span>{nextProject.title} →</span>
+                  <span className="absolute bottom-0 left-0 h-[1.5px] w-full bg-primary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
                 </Link>
               ) : (
                 <div />
