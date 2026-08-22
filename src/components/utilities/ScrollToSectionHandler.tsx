@@ -1,4 +1,4 @@
-import useScrollToSection from "../hooks/useScrollToSection";
+import useScrollToSection from "../../hooks/useScrollToSection";
 
 function ScrollToSectionHandler() {
   useScrollToSection();
