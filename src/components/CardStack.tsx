@@ -37,7 +37,7 @@ function CardStack({ cards, interval = 3000 }: CardStackProps) {
               x: `${depth * 10}%`,
               y: `${depth * 1}%`,
               scale: 1 - depth * 0.06,
-              opacity: depth === 0 ? 1 : 0.9 - depth * 0.15,
+              opacity: 1 /* depth === 0 ? 1 : 0.9 - depth * 0.15*/,
             }}
             transition={{ duration: 0.7, ease: "easeInOut" }}
             style={{ zIndex: COUNT - depth }}
