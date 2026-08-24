@@ -2,15 +2,19 @@ import { Link } from "react-router-dom";
 import Container from "../../components/utilities/Container";
 import { projects } from "../../data/projects";
 import MotionSection from "../../components/utilities/MotionSection";
+import {
+  SectionLabel,
+  SectionTitle,
+} from "../../components/utilities/TextStyle";
 
 function Portfolio() {
   return (
     <Container id="portfolio">
       <MotionSection direction="left" delay={0.1}>
-        <span className="text-sm font-bold uppercase">Portfólio</span>
-        <h2 className="text-4xl md:text-5xl font-black leading-tight text-foreground">
+        <SectionLabel>Portfólio</SectionLabel>
+        <SectionTitle>
           Projetos <em> selecionados</em>
-        </h2>
+        </SectionTitle>
       </MotionSection>
       <MotionSection direction="left" delay={0.2}>
         <p className="mt-6 mb-6">
@@ -30,9 +34,7 @@ function Portfolio() {
                 {project.title}
               </h3>
             </div>
-            <p className="text-xs uppercase">
-              {project.tags.join(", ")}
-            </p>
+            <p className="text-xs uppercase">{project.tags.join(", ")}</p>
           </Link>
         </MotionSection>
       ))}

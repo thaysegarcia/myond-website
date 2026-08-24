@@ -2,6 +2,10 @@ import Container from "../../components/utilities/Container";
 import CtaButton from "../../components/utilities/CtaButton";
 import MotionSection from "../../components/utilities/MotionSection";
 import { processSteps } from "../../data/processStep";
+import {
+  SectionTitle,
+  SectionLabel,
+} from "../../components/utilities/TextStyle";
 
 function Sobre() {
   return (
@@ -9,12 +13,10 @@ function Sobre() {
       <div className="grid md:grid-cols-2 gap-12 items-start">
         <div>
           <MotionSection direction="left" delay={0.1}>
-            <span className="text-sm text-muted font-bold uppercase">
-              Sobre
-            </span>
-            <h2 className="text-4xl md:text-5xl font-black leading-tight text-foreground">
+            <SectionLabel>Sobre</SectionLabel>
+            <SectionTitle>
               Design além da <em> estética</em>
-            </h2>
+            </SectionTitle>
           </MotionSection>
           <MotionSection direction="left" delay={0.2}>
             <p className="mt-6">
