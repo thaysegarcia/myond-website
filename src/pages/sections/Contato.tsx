@@ -1,4 +1,5 @@
 import Container from "../../components/utilities/Container";
+import CtaButton from "../../components/utilities/CtaButton";
 import MotionSection from "../../components/utilities/MotionSection";
 import {
   SectionTitle,
@@ -7,10 +8,22 @@ import {
 
 function Contato() {
   return (
-    <Container id="contato">
+    <Container id="contato" className="flex flex-col items-center text-center">
       <MotionSection direction="up">
         <SectionLabel>Contato</SectionLabel>
-        <SectionTitle>Dê vida à sua visão</SectionTitle>
+        <SectionTitle>
+          Vamos criar algo <em>memorável</em>
+        </SectionTitle>
+      </MotionSection>
+      <MotionSection direction="up">
+        <p className="w-2xl mt-6 mb-8">
+          Toda marca forte começa com uma boa conversa. Conta pra gente sobre o
+          seu projeto e vamos construir juntos uma identidade que representa
+          quem você é.
+        </p>
+      </MotionSection>
+      <MotionSection>
+        <CtaButton to="">Vamos conversar</CtaButton>
       </MotionSection>
     </Container>
   );
