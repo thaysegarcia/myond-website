@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import Container from "../components/utilities/Container";
 import { projects } from "../data/projects";
 import MotionSection from "../components/utilities/MotionSection";
+import Gallery from "../components/utilities/Gallery";
 
 function Project() {
   const { slug } = useParams();
@@ -26,7 +27,11 @@ function Project() {
   return (
     <Container key={slug}>
       <div className="grid md:grid-cols-2 gap-12 items-start">
-        <MotionSection>galeria</MotionSection>
+        <MotionSection>
+
+          <Gallery images={project.gallery} alt={project.title}/>
+
+        </MotionSection>
 
         <div>
           <MotionSection direction="right">

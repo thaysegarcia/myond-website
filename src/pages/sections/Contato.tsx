@@ -22,7 +22,7 @@ function Contato() {
           quem você é.
         </p>
       </MotionSection>
-      <MotionSection>
+      <MotionSection direction="up">
         <CtaButton to="">Vamos conversar</CtaButton>
       </MotionSection>
     </Container>
