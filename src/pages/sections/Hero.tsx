@@ -28,7 +28,7 @@ function Hero() {
         </div>
 
         <MotionSection direction="right">
-          <div className="overflow-x-clip sm:overflow-visible">
+          <div className="overflow-x-clip lg:overflow-visible">
 
           <CardStack cards={identityCards} />
           </div>

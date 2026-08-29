@@ -75,7 +75,7 @@ function Header() {
                 key={item.hash}
                 to={item.hash ? `/#${item.hash}` : "/"}
                 onClick={closeMenu}
-                className="hover:text-foreground transition-colors duration-300"
+                className="text-muted hover:text-foreground transition-colors duration-300"
               >
                 {item.label}
               </NavLink>

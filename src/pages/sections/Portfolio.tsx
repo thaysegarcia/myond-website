@@ -30,7 +30,7 @@ function Portfolio() {
           >
             <div className="flex gap-4 items-end">
               <span className="text-xs">{project.id}</span>
-              <h3 className="text-3xl md:text-4xl font-black leading-tight text-foreground hover:text-muted transition-colors cursor-pointer duration-300">
+              <h3 className="text-xl md:text-4xl font-black leading-tight text-foreground hover:text-muted transition-colors cursor-pointer duration-300">
                 {project.title}
               </h3>
             </div>

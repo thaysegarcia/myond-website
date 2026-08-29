@@ -8,7 +8,7 @@ interface ContainerProps {
 
 function Container({ id, className = "", children }: ContainerProps) {
   return (
-    <section id={id} className={`px-6 py-20 md:py-32 max-w-6xl mx-auto ${className}`}>
+    <section id={id} className={`px-6 py-8 md:py-32 max-w-6xl mx-auto ${className}`}>
       {children}
     </section>
   );
