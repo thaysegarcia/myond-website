@@ -3,6 +3,7 @@ import Container from "../../components/utilities/Container";
 import CtaButton from "../../components/utilities/CtaButton";
 import CardStack from "../../components/CardStack";
 import { identityCards } from "../../data/VisualIDCards";
+import { whatsappUrl } from "../../data/contact";
 
 function Hero() {
   return (
@@ -21,7 +22,7 @@ function Hero() {
             </p>
           </MotionSection>
           <MotionSection delay={0.2}>
-            <CtaButton to="/contato" className="mt-8">
+            <CtaButton href={whatsappUrl} className="mt-8">
               Vamos conversar
             </CtaButton>
           </MotionSection>

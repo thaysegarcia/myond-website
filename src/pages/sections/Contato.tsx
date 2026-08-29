@@ -5,6 +5,7 @@ import {
   SectionTitle,
   SectionLabel,
 } from "../../components/utilities/TextStyle";
+import { whatsappUrl } from "../../data/contact";
 
 function Contato() {
   return (
@@ -15,15 +16,17 @@ function Contato() {
           Vamos criar algo <em>memorável</em>
         </SectionTitle>
       </MotionSection>
-      <MotionSection direction="up">
+      <MotionSection direction="up" delay={0.1}>
         <p className="w-full md:w-2xl mt-6 mb-8">
           Toda marca forte começa com uma boa conversa. Conta pra gente sobre o
           seu projeto e vamos construir juntos uma identidade que representa
           quem você é.
         </p>
       </MotionSection>
-      <MotionSection direction="up">
-        <CtaButton to="">Vamos conversar</CtaButton>
+      <MotionSection direction="up" delay={0.2}>
+        <CtaButton href={whatsappUrl} className="mt-8">
+          Vamos conversar
+        </CtaButton>
       </MotionSection>
     </Container>
   );

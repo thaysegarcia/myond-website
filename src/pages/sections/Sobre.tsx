@@ -6,6 +6,7 @@ import {
   SectionTitle,
   SectionLabel,
 } from "../../components/utilities/TextStyle";
+import { whatsappUrl } from "../../data/contact";
 
 function Sobre() {
   return (
@@ -35,7 +36,7 @@ function Sobre() {
             </p>
           </MotionSection>
           <MotionSection delay={0.3}>
-            <CtaButton to="/contato" className="mt-8">
+            <CtaButton href={whatsappUrl} className="mt-8">
               Vamos conversar
             </CtaButton>
           </MotionSection>
